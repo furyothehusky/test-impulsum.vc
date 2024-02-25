@@ -16,7 +16,7 @@ export default function PasswordForm() {
 
     const isSubmitDisabled = isLoading || password !== confirmPassword ||
         !(
-            hasMinimumLength(password) &&
+            hasMinimumLength(password, 12) &&
             hasNumber(password) &&
             hasLowercase(password) &&
             hasUppercase(password) &&
