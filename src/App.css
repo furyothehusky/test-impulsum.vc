@@ -1,0 +1,121 @@
+/*Containers*/
+
+.app-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 450px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+
+/* Navbar components Style*/
+.navbar {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 70px
+}
+
+.logo {
+  margin-right: 50px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-left: 50px;
+}
+
+.nav-buttons {
+  margin-left: auto;
+}
+
+
+/* General Buton components Style*/
+.button {
+  background-color: #4F4FFF;
+  font-size: 14px;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.disabled-button {
+  background-color: #4F4FFF;
+  color: #e6e6e6;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  margin-right: 50px;
+}
+
+.login-button {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 14px;
+}
+
+
+
+/*Criteria Component Style*/
+.criteria-item {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.criteria-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.check-icon {
+  width: 12px;
+  margin-right: 8px;
+}
+
+.criteria-column {
+  margin-right: 20px;
+}
+
+
+/*Inputs components*/
+.password-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 32px;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.input-wrapper input {
+  background-color: #e6e6e63b;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  font-size: 16px;
+}
