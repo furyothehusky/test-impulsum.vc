@@ -8,8 +8,8 @@ export default function PasswordCriteriaChecker({ password }: { password: string
     return (
         <CriteriaContainer>
             <CriteriaColumn>
-                <CriteriaItem isValid={hasMinimumLength(password)}>
-                    {hasMinimumLength(password) ? 'Has 12 minimum characters ' : '12 minimum characters '}
+                <CriteriaItem isValid={hasMinimumLength(password, 12)}>
+                    {hasMinimumLength(password, 12) ? 'Has 12 minimum characters ' : '12 minimum characters '}
                 </CriteriaItem>
                 <CriteriaItem isValid={hasNumber(password)}>
                     {hasNumber(password) ? 'Has one number' : 'one number'}

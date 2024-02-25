@@ -1,8 +1,9 @@
-export const hasMinimumLength = (password: string) => password.length >= 12;
-export const hasNumber = (password: string) => /\d/.test(password);
-export const hasLowercase = (password: string) => /[a-z]/.test(password);
-export const hasUppercase = (password: string) => /[A-Z]/.test(password);
-export const hasSpecialChar = (password: string) => /[!@#$%^&*(),.?":{}|<>]/.test(password);
+export const hasMinimumLength = (str: string, minLength: number) => str.length >= minLength;
+export const hasNumber = (str: string) => /\d/.test(str);
+export const hasLowercase = (str: string) => /[a-z]/.test(str);
+export const hasUppercase = (str: string) => /[A-Z]/.test(str);
+export const hasSpecialChar = (str: string,) => /[!@#$%^&*(),.?":{}|<>]/.test(str);
+
 
 export const simulatePasswordChangeRequest = async (password: string): Promise<boolean> => {
     await new Promise(resolve => setTimeout(resolve, 1000));
