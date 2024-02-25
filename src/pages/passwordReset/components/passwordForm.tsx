@@ -31,7 +31,7 @@ export default function PasswordForm() {
                 password,
                 confirmPassword
             };
-            const isSuccess = await simulatePasswordChangeRequest(payload);
+            const isSuccess = await simulatePasswordChangeRequest(payload.password);
             if (isSuccess) {
                 console.info("Password changed");
             } else {
