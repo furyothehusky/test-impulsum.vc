@@ -53,6 +53,7 @@
 
 .disabled-button {
   background-color: #4F4FFF;
+  font-size: 14px;
   color: #e6e6e6;
   border-radius: 25px;
   padding: 10px 20px;
