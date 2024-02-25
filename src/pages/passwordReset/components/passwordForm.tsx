@@ -4,6 +4,11 @@ import PasswordCriteriaChecker from "./passwordCriteriaChecker";
 import SubmitButton from "./submitButton";
 import PasswordField from "./passwordField";
 
+interface Payload {
+    password: string;
+    confirmPassword: string;
+}
+
 export default function PasswordForm() {
     const [password, setPassword] = useState<string>('');
     const [confirmPassword, setConfirmPassword] = useState<string>('');
@@ -22,7 +27,11 @@ export default function PasswordForm() {
         e.preventDefault();
         setIsLoading(true);
         try {
-            const isSuccess = await simulatePasswordChangeRequest(password);
+            const payload: Payload = {
+                password,
+                confirmPassword
+            };
+            const isSuccess = await simulatePasswordChangeRequest(payload);
             if (isSuccess) {
                 console.info("Password changed");
             } else {
